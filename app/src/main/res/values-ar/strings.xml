@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">الأسهم هوك</string>
+    <string name="is_rtl">true</string>
+
+    <string name="action_example">العمل سبيل المثال</string>
+
+    <string name="action_settings">إعدادات</string>
+    <string name="action_change_units">وحدات التغيير</string>
+    <string name="symbol_search">رمز البحث</string>
+    <string name="content_test">بحث عن الأوراق المالية رمز</string>
+    <string name="input_hint"  translatable="false">FB</string>
+    <string name="input_prefill"></string>
+    <string name="widget_title">سوق اليوم</string>
+    <string name="network_toast">اه اوه! هذا التطبيق يتطلب اتصال بالإنترنت</string>
+    <string name="title_activity_activity_graph">ActivityGraph</string>
+
+
+    <string name="appwidget_text">مثال</string>
+    <string name="add_widget">إضافة القطعة</string>
+    <string name="addStock">إضافة الأسهم الجديدة</string>
+    <string name="AddStockHint" translatable="false">FB</string>
+    <string name="searchStock">بحث عن الأسهم</string>
+    <string name="ok">حسنا</string>
+    <string name="stockSaved">يتم حفظ هذه الأسهم بالفعل!</string>
+
+
+</resources>

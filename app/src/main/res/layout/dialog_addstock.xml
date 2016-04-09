@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/searchStock"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:contentDescription="@string/searchStock"
+        android:textColor="#FFF"/>
+
+    <EditText
+        android:id="@+id/StockName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:hint="@string/AddStockHint"
+        android:contentDescription="@string/AddStockHint"/>
+
+    <Button
+        android:id="@+id/Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_gravity="right"
+        android:contentDescription="@string/ok"
+        />
+
+</LinearLayout>

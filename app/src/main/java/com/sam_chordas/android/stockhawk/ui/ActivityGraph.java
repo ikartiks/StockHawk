@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.sam_chordas.android.stockhawk.R;
 import com.sam_chordas.android.stockhawk.data.Quote;
+import com.sam_chordas.android.stockhawk.data.Results;
 import com.sam_chordas.android.stockhawk.data.StockResults;
 import com.sam_chordas.android.stockhawk.ours.ApiCalls;
 import com.sam_chordas.android.stockhawk.ours.Constants;
@@ -73,10 +74,15 @@ public class ActivityGraph extends Activity {
                     if (response.isSuccess()) {
 
                         StockResults stockResults = response.body();
-                        List<Quote> quoteList=stockResults.getQuery().getResults().getQuote();
-                        for (Quote q :quoteList){
 
-                            series.addPoint(new ValueLinePoint(q.getDate(), Float.parseFloat(q.getClose())));
+                        Results results=stockResults.getQuery().getResults();
+                        if(results!=null){
+                            List<Quote> quoteList=results.getQuote();
+                            for (Quote q :quoteList){
+
+                                series.addPoint(new ValueLinePoint(q.getDate(), Float.parseFloat(q.getClose())));
+                            }
+
                         }
 
                         mCubicValueLineChart.addSeries(series);
